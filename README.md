@@ -1,4 +1,4 @@
-# serial_communication_channels
+# [serial_communication_channels](https://github.com/5dpo/serial_communication_channels)
 
 **Version 1.0**
 
