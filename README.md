@@ -31,21 +31,50 @@ the one used on the Arduino is the same one developed by professor Paulo Costa.
 
 - It is not expected any further developments on this library
 
+## ROS
+
+**foxy**
+
+- [Ubuntu 20.04.6 LTS](https://releases.ubuntu.com/focal/)
+- [ROS 2 Foxy](https://docs.ros.org/en/foxy/)
+
+**noetic**
+
+- [Ubuntu 20.04.6 LTS](https://releases.ubuntu.com/focal/)
+- [ROS 1 Noetic](https://wiki.ros.org/noetic/)
+
 ## Communication Protocol
 
 - `[CHANNEL]` + `[DATA]` + `\0`
 - `[CHANNEL]`: 'g'-'z', 'G'-'Z'
 - `[DATA]`: characters that represent a value in hexadecimal
 
+## Usage
+
+### Compilation
+
+```sh
+# ROS 2
+source /opt/ros/foxy/setup.bash
+
+# Create workspace
+mkdir -p ~/ros2_ws/src
+
+# Clone the repository
+cd ~/ros2_ws/src
+git clone git@github.com:5dpo/serial_communication_channels.git
+
+# Build
+colcon build
+source install/setup.bash
+```
+
+## Acknowledges
+
+- [Faculty of Engineering, University of Porto (FEUP)](https://sigarra.up.pt/feup/en/)
+- [INESC TEC - Institute for Systems and Computer Engineering, Technology and Science](https://www.inesctec.pt/en/)
+
 ## Contacts
 
-If you have any questions or you want to know more about this work, please contact one of the contributors of this package:
-
-- Héber Miguel Sobreira ([gitlab](https://gitlab.inesctec.pt/heber.m.sobreira),
-  [inesctec](mailto:heber.m.sobreira@inesctec.pt))
-- Ricardo B. Sousa ([github](https://github.com/sousarbarb/),
-  [gitlab](https://gitlab.com/sousarbarb/),
-  [personal](mailto:sousa.ricardob@outlook.com),
-  [feup:professor](mailto:rbs@fe.up.pt),
-  [feup:student](mailto:up201503004@edu.fe.up.pt),
-  [inesctec](mailto:ricardo.b.sousa@inesctec.pt))
+If you have any questions or you want to know more about this work, please
+contact any member of the 5dpo Robotics Team.
