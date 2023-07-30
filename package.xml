@@ -20,6 +20,7 @@
 
   <author email="amoreira@fe.up.pt">António Paulo Moreira</author>
   <author email="claudia.d.rocha@inesctec.pt">Cláudia Daniela Rocha</author>
+  <author email="heber.m.sobreira@inesctec.pt">Héber Miguel Sobreira</author>
   <author email="joao.g.martins@inesctec.pt">João G. Martins</author>
   <author email="up201806431@edu.fe.up.pt">João Pedro Costa</author>
   <author email="joaotomasmfgp@hotmail.com">João Tomás Padrão</author>
@@ -35,8 +36,21 @@
 
 
 
+
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+
+
+
+  <depend condition="$ROS_VERSION == 1">roscpp</depend>
+
+
+
+
+
   <export>
-    <build_type>cmake</build_type>
+    <build_type condition="$ROS_VERSION == 2">cmake</build_type>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
   </export>
 
 </package>
