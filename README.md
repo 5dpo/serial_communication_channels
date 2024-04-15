@@ -13,7 +13,7 @@ correspond to the ones consider in this package: '0'..'9','A'..'F'.
 
 Lastly, it is possible to use the same library on the Arduino (example provided
 by Héber Sobreira - please contact him for further informations on this matter).
-However, this implementation uses reallocs of memory. Even though it is only 
+However, this implementation uses reallocs of memory. Even though it is only
 when the Arduino turns on, I did not think that this approach would be the
 correct one due to Arduinos do not have a proper memory management system. So,
 the one used on the Arduino is the same one developed by professor Paulo Costa.
@@ -29,7 +29,8 @@ the one used on the Arduino is the same one developed by professor Paulo Costa.
 
 **The next version will add these features:**
 
-- It is not expected any further developments on this library
+- Binary write and read (compression that allows to reduce from 8 to 4 bytes of
+  data on certain data types)
 
 ## ROS
 
